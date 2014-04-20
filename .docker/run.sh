@@ -76,8 +76,8 @@ command=/usr/local/bin/uwsgi
     -T
     --master
     --max-requests 5000
-    --static-map /static=/app/static
-    --static-map /static=/usr/local/lib/python2.7/dist-packages/django/contrib/admin/static
+    --static-map /shipyard/static=/app/static
+    --static-map /shipyard/static=/usr/local/lib/python2.7/dist-packages/django/contrib/admin/static
     --module wsgi:application
 user=root
 autostart=true
